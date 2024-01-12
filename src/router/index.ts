@@ -1,54 +1,31 @@
-// https://router.vuejs.org/zh/
-import { createRouter, createWebHistory } from 'vue-router'
-import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
+import { App } from 'vue';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import { LoginRoute, RootRoute, ErrorPageRoute } from '@/router/base';
+import { createRouterGuards } from './router-guards';
+import { useRouteStoreWidthOut } from '@/store/modules/route';
 
-// 导入路由组件
-import main from '@/views/index.vue'
-import mock from '@/views/mock/index.vue'
-import charts from '@/views/charts/index.vue'
-import unocss from '@/views/unocss/index.vue'
+// 菜单
+import routeModuleList from './modules';
 
-NProgress.configure({ showSpinner: true, parent: '#app' })
+// 普通路由
+export const constantRouter: RouteRecordRaw[] = [LoginRoute, RootRoute, ErrorPageRoute];
 
-// 定义路由，每个路由都需要映射到一个组件
-const routes = [
-  {
-    path: '/',
-    name: 'main',
-    component: main,
-  },
-  {
-    path: '/mock',
-    name: 'mock',
-    component: mock,
-  },
-  {
-    path: '/charts',
-    name: 'charts',
-    component: charts,
-  },
-  {
-    path: '/unocss',
-    name: 'unocss',
-    component: unocss,
-  },
-]
+const routeStore = useRouteStoreWidthOut();
 
-// 创建路由实例并传递 `routes` 配置
+routeStore.setMenus(routeModuleList);
+routeStore.setRouters(constantRouter.concat(routeModuleList));
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_APP_PUBLIC_PATH),
-  routes,
-})
+  history: createWebHashHistory(''),
+  routes: constantRouter.concat(...routeModuleList),
+  strict: true,
+  scrollBehavior: () => ({ left: 0, top: 0 }),
+});
 
-router.beforeEach((_to, _from, next) => {
-  NProgress.start() // start progress bar
-  next()
-})
+export function setupRouter(app: App) {
+  app.use(router);
+  // 创建路由守卫
+  createRouterGuards(router);
+}
 
-router.afterEach(() => {
-  NProgress.done() // finish progress bar
-})
-
-// 导出路由实例，并在 `main.ts` 挂载
-export default router
+export default router;

@@ -1,240 +1,151 @@
-<h1 align="center">Vue3-Vant-Mobile</h1>
+<div align="center">
+  <a href="https://github.com/xiangshu233/vue3-vant4-mobile">
+    <img alt="Vue3Vant4MobileLogo" width="200" height="200" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/logo.svg">
 
-<p align='center'>
-  <a href="https://vue3-vant-mobile.netlify.app">Live Demo</a>
-</p>
-
-<p align="center">
-  An mobile web apps template based on the Vue 3 ecosystem
-</p>
+  </a>
+</div><br><br>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/CharleeWa/vue3-vant-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/CharleeWa/vue3-vant-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/CharleeWa/vue3-vant-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/CharleeWa/vue3-vant-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/CharleeWa/vue3-vant-mobile" alt="issues" />
+  <img src="https://img.shields.io/github/license/xiangshu233/vue3-vant4-mobile" alt="license" />
+  <img src="https://img.shields.io/github/package-json/v/xiangshu233/vue3-vant4-mobile" alt="version" />
+  <img src="https://img.shields.io/github/repo-size/xiangshu233/vue3-vant4-mobile" alt="repo-size" />
+  <img src="https://img.shields.io/github/languages/top/xiangshu233/vue3-vant4-mobile" alt="languages" />
+  <img src="https://img.shields.io/github/issues-closed/xiangshu233/vue3-vant4-mobile" alt="issues" />
 </p>
 
-<br>
+<h1 align="center">vue3-vant4-mobile</h1>
 
-<p align='center'>
-<b>English</b> / <a href="https://github.com/CharleeWa/vue3-vant-mobile/blob/main/README.zh-CN.md">简体中文</a>
+## 介绍
+
+👋👋👋 Vue3 Vant4 Mobile 使用了最新的 `Vue3.2`、`Vite3`、`Vant4`、`Pinia2`、`TypeScript`、`WindiCSS` 等主流技术开发，集成 `Dark Mode`（暗黑）模式和系统主题色，并且持久化保存，集成 `Mock` 数据，顺便写了个 登录/注册/找回密码 页面（包括逻辑），你只需要替换你的 API 即可，顺便写了个包含 `NavBar`、`TabBar` 的 Layout，顺便集成了 `Axios`、`useECharts`、`IconSvg`，顺便集成了代码规范检查工具 `Eslint`、`Prettier`、`Stylelint`。顺便全页面均可以 `<keep-alive>`，顺便......好吧没有了。现在，你可以在此之上直接开发你的业务代码！希望你能喜欢。🥳🥳🥳
+
+## 截图预览
+
+<table>
+	<tr>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022091917.png" width="400" alt="登录页面" /></td>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092004.png" width="400" alt="主控台页(首页）" /></td>
+	</tr>
+	<tr>
+    <td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092015.png" width="400" alt="消息页（图标页）" /></td>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092022.png" width="400" alt="我的（我的信息页面）" /></td>
+	</tr>
+</table>
+
+
+<details>
+<summary>展开预览暗黑模式下的界面截图。</summary>
+
+<table>
+	<tr>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092052.png" width="400" alt="登录页面（暗黑模式）" /></td>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092140.png" width="400" alt="主控台页（暗黑模式）" /></td>
+	</tr>
+	<tr>
+    <td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20221022092224.png" width="400" alt="我的页面（暗黑模式）" /></td>
+		<td><img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/10/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221023152559.png" width="400" alt="主题设置页面（暗黑模式）" /></td>
+	</tr>
+</table>
+
+</details>
+
+## 线上预览
+
+预览链接：*[https://vvmobile.xiangshu233.cn/](https://vvmobile.xiangshu233.cn/)*
+
+账号：admin，密码：123456
+
+账号：test，密码：123456
+
+或者扫描以下二维码进入手机演示
+
+<p align="center">
+  <img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/vue3-vant4-mobile-QR-code.png" width="200" />
 </p>
 
-<br>
+## 基础知识
 
-## Features
+- [Vite](https://cn.vitejs.dev/) - 熟悉 `Vite` 特性
+- [Vue3](https://v3.vuejs.org/) - 熟悉 `Vue3` 基础语法
+- [Vant4](https://youzan.github.io/vant/v4/#/zh-CN) - 掌握 `vant4` 组件基本使用
+- [Pinia](https://pinia.vuejs.org/) - 熟悉 `Pinia` 特性
+- [TypeScript](https://www.typescriptlang.org/) - 熟悉 `TypeScript` 基本语法
+- [Vue-Router-Next](https://router.vuejs.org/) - 熟悉 `Vue-Router`基本使用
+- [ECharts5](https://echarts.apache.org/handbook/zh/get-started/) - 熟悉 `Echarts` 基本使用
+- [xicons](https://www.xicons.org/#/) - 本项目推荐图标库，当然你也可以使用 `IconSVg`
+- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - 了解手机端 `px` 转 `viewport` 插件的作用
+- [Lodash-es](https://www.lodashjs.com/) - `JS`高性能工具库
+- [WindiCSS](https://cn.windicss.org/guide/) - 原子化 `CSS`，熟悉 `WindiCSS` 基本使用
+- [Mock.js](https://github.com/nuysoft/Mock) - 了解 `Mockjs` 基本语法
+- [ES6+](http://es6.ruanyifeng.com/) - 熟悉 `ES6` 基本语法
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
+## 环境准备
 
-- 📦 [Components auto importing](./src/components)
+本地环境需要安装 [pnpm7.x](https://www.pnpm.cn/)、[Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/)
 
-- 🍍 [State Management via Pinia](https://pinia.vuejs.org)
+- 必须使用[pnpm7.x](https://www.pnpm.cn/)，否则依赖可能安装不上。
+- [Node.js](http://nodejs.org/) 版本要求`12.x`以上，且不能为`13.x`版本，这里推荐 `15.x` 及以上。
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine
+## VS Code 配套插件
 
-- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+如果你使用的 IDE 是 [VS Code](https://code.visualstudio.com/)（推荐）的话，可以安装以下工具来提高开发效率及代码格式化
 
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
+- [WindiCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - WindiCSS 提示插件
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 开发必备
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 脚本代码检查
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 代码格式化
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - CSS 格式化
+- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) - `.env` 文件 高亮
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) - 更好的错误定位
 
-- 💪 TypeScript, of course
-
-- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
-
-- 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
-
-- 🌈 Git [hooks](./.husky) - lint and commit
-
-- 🪶 [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
-
-- 🔭 [vConsole](https://github.com/vadxq/vite-plugin-vconsole) - the developer tool for mobile web page
-
-- 📱 Browser adaptation - use viewport vw/vh units
-
-- 💻 [Desktop optimization](https://github.com/wswmsword/postcss-mobile-forever) - the mobile area
-
-- 🌓 Dark Mode Support
-
-- 🛡️ Configure [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) as default
-
-- ☁️ Deploy on [Netlify](https://www.netlify.com), zero-config
-
-<br>
-
-## Pre-packed
-
-### UI Frameworks
-
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine
-  - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities
-  - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS
-- [Vant](https://github.com/youzan/vant) - Vue UI library for mobile web apps
-  - [`vant-touch-emulator`](https://github.com/youzan/vant/tree/main/packages/vant-touch-emulator) - Simulate mobile touch events on the desktop
-  - [`vant-use`](https://github.com/youzan/vant/tree/main/packages/vant-use) - Built-in composition APIs of Vant
-
-### Plugins
-
-- [Vue Router](https://github.com/vuejs/router)
-  - [`vue-router-better-scroller`](https://github.com/antfu/vue-router-better-scroller) - Enhanced scroll behavior for Vue Router
-- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-  - [`pinia-plugin-persistedstate`](https://github.com/prazdevs/pinia-plugin-persistedstate) -  Configurable persistence and rehydration of Pinia stores
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [vite-plugin-vconsole](https://github.com/vadxq/vite-plugin-vconsole) - A lightweight, extendable front-end developer tool for mobile web page
-- [vite-plugin-mock-dev-server](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) - Vite Plugin for API mock dev server
-- [postcss-mobile-forever](https://github.com/wswmsword/postcss-mobile-forever) - To adapt different displays by one mobile viewport
-
-### Coding Style
-
-- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi
-
-### Dev tools
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
-- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [Netlify](https://www.netlify.com/) - zero-config deployment
-- [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-## Try it now
-
-> Vue3-Vant-Mobile requires Node 18+
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/CharleeWa/vue3-vant-mobile/generate)
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+## 使用
 
 ```bash
-npx degit CharleeWa/vue3-vant-mobile my-mobile-app
-cd my-mobile-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
+# 获取项目代码
+git clone https://github.com/xiangshu233/vue3-vant4-mobile.git
 
-## Checklist
+# 安装依赖
+cd vue3-vant4-mobile
+pnpm install
 
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
-- [ ] Change the hostname in `vite.config.ts`
-- [ ] Change the favicon in `public`
-- [ ] Clean up the READMEs and remove routes
-
-And, enjoy :)
-
-## Usage
-
-### Development
-
-Just run and visit <http://localhost:3000>
-
-```bash
+# 运行
 pnpm dev
-```
 
-### Build
-
-To build the App, run
-
-```bash
+# 打包
 pnpm build
 ```
 
-And you will see the generated file in `dist` that ready to be served.
+## Git 贡献提交规范
 
-### Deploy on Netlify
+- 参考 [vue](https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md) 规范 ([Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
+  - `feat` 增加新功能
+  - `fix` 修复问题/BUG
+  - `style` 代码风格相关无影响运行结果的
+  - `perf` 优化/性能提升
+  - `refactor` 重构
+  - `revert` 撤销修改
+  - `test` 测试相关
+  - `docs` 文档/注释
+  - `chore` 依赖更新/脚手架配置修改等
+  - `workflow` 工作流改进
+  - `ci` 持续集成
+  - `types` 类型定义文件更改
+  - `wip` 开发中
 
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
+## 浏览器支持
 
-## Contributors
+本地开发推荐使用`Chrome 80+` 浏览器
 
-<table>
-<tr>
-  <td align="center">
-    <a href="https://github.com/CharleeWa">
-      <img src="https://avatars.githubusercontent.com/u/22477554?s=96&v=4" width="90;" alt="CharleeWa"/>
-      <br />
-      <sub><b>Charlie Wang</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/weiq">
-      <img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="90;" alt="weiq"/>
-      <br />
-      <sub><b>魏小雨</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/AlphaYoung111">
-      <img src="https://avatars.githubusercontent.com/u/54132313?v=4" width="90;" alt="AlphaYoung"/>
-      <br />
-      <sub><b>AlphaYoung</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/Leezon">
-      <img src="https://avatars.githubusercontent.com/u/38120280?v=4" width="90;" alt="Leezon"/>
-      <br />
-      <sub><b>Leezon</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/leo4developer">
-      <img src="https://avatars.githubusercontent.com/u/15160478?v=4" width="90;" alt="liuNing"/>
-      <br />
-      <sub><b>liuNing</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/wswmsword">
-      <img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="90;" alt="wswmsword"/>
-      <br />
-      <sub><b>wswmsword</b></sub>
-    </a>
-  </td>
-</tr>
-<tr>
-  <td align="center">
-    <a href="https://github.com/Kysen777">
-      <img src="https://avatars.githubusercontent.com/u/63892082?v=4" width="90;" alt="Kysen"/>
-      <br />
-      <sub><b>Kysen</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/smartsf">
-      <img src="https://avatars.githubusercontent.com/u/19995400?v=4" width="90;" alt="smartsf"/>
-      <br />
-      <sub><b>阿峰</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/ReginYuan">
-      <img src="https://avatars.githubusercontent.com/u/49477488?v=4" width="90;" alt="ReginYuan"/>
-      <br />
-      <sub><b>ReginYuan</b></sub>
-    </a>
-  </td>
-</tr>
-</table>
+支持现代浏览器, 不支持 IE
 
-## Star History
+| [![ Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) IE | [![ Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)](http://godban.github.io/browsers-support-badges/) Edge | [![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)](http://godban.github.io/browsers-support-badges/) Firefox | [![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)](http://godban.github.io/browsers-support-badges/) Chrome | [![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)](http://godban.github.io/browsers-support-badges/) Safari |
+| --- | --- | --- | --- | --- |
+| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-<p align="left">
-  <a target="_blank" href="https://star-history.com/#CharleeWa/vue3-vant-mobile&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CharleeWa/vue3-vant-mobile&type=Date">
-    </picture>
-  </a>
-</p>
+## 维护者
+
+[@xiangshu233](https://github.com/xiangshu233)
+
+## LICENSE
+
+[MIT](https://en.wikipedia.org/wiki/MIT_License)
